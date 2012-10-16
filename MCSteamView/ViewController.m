@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "MCSteamView.h"
+
+#define STEAM_WIDTH     200.0
+#define STEAM_HEIGHT    10.0
 
 @interface ViewController ()
 
@@ -18,6 +22,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    CGRect bounds = self.view.bounds;
+    CGRect frame = CGRectMake((bounds.size.width - STEAM_WIDTH)/2, (bounds.size.height - STEAM_HEIGHT)/2, STEAM_WIDTH, STEAM_HEIGHT);
+    MCSteamView * steamView = [[MCSteamView alloc] initWithFrame:frame];
+    [self.view addSubview:steamView];
 }
 
 - (void)didReceiveMemoryWarning

@@ -19,6 +19,10 @@
 		86C21142162DD9CF001331BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C21141162DD9CF001331BB /* ViewController.m */; };
 		86C21145162DD9CF001331BB /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C21143162DD9CF001331BB /* ViewController_iPhone.xib */; };
 		86C21148162DD9CF001331BB /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C21146162DD9CF001331BB /* ViewController_iPad.xib */; };
+		86C21151162DDA27001331BB /* MCSteamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C21150162DDA27001331BB /* MCSteamView.m */; };
+		86C21156162DDAA3001331BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C21155162DDAA3001331BB /* QuartzCore.framework */; };
+		86C21158162DDAC9001331BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 86C21157162DDAC9001331BB /* README.md */; };
+		86C21162162DDD94001331BB /* steam-particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C21161162DDD94001331BB /* steam-particle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,11 @@
 		86C21141162DD9CF001331BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		86C21144162DD9CF001331BB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		86C21147162DD9CF001331BB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		86C2114F162DDA27001331BB /* MCSteamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSteamView.h; path = Classes/MCSteamView.h; sourceTree = "<group>"; };
+		86C21150162DDA27001331BB /* MCSteamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSteamView.m; path = Classes/MCSteamView.m; sourceTree = "<group>"; };
+		86C21155162DDAA3001331BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		86C21157162DDAC9001331BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		86C21161162DDD94001331BB /* steam-particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "steam-particle.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C21156162DDAA3001331BB /* QuartzCore.framework in Frameworks */,
 				86C21129162DD9CE001331BB /* UIKit.framework in Frameworks */,
 				86C2112B162DD9CE001331BB /* Foundation.framework in Frameworks */,
 				86C2112D162DD9CE001331BB /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +68,9 @@
 		86C21119162DD9CE001331BB = {
 			isa = PBXGroup;
 			children = (
+				86C21157162DDAC9001331BB /* README.md */,
+				86C21152162DDA76001331BB /* Assets */,
+				86C2114E162DDA11001331BB /* Classes */,
 				86C2112E162DD9CE001331BB /* MCSteamView */,
 				86C21127162DD9CE001331BB /* Frameworks */,
 				86C21125162DD9CE001331BB /* Products */,
@@ -75,6 +88,7 @@
 		86C21127162DD9CE001331BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86C21155162DDAA3001331BB /* QuartzCore.framework */,
 				86C21128162DD9CE001331BB /* UIKit.framework */,
 				86C2112A162DD9CE001331BB /* Foundation.framework */,
 				86C2112C162DD9CE001331BB /* CoreGraphics.framework */,
@@ -108,6 +122,23 @@
 				86C2113E162DD9CF001331BB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86C2114E162DDA11001331BB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86C2114F162DDA27001331BB /* MCSteamView.h */,
+				86C21150162DDA27001331BB /* MCSteamView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		86C21152162DDA76001331BB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				86C21161162DDD94001331BB /* steam-particle.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +198,8 @@
 				86C2113F162DD9CF001331BB /* Default-568h@2x.png in Resources */,
 				86C21145162DD9CF001331BB /* ViewController_iPhone.xib in Resources */,
 				86C21148162DD9CF001331BB /* ViewController_iPad.xib in Resources */,
+				86C21158162DDAC9001331BB /* README.md in Resources */,
+				86C21162162DDD94001331BB /* steam-particle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +213,7 @@
 				86C21135162DD9CF001331BB /* main.m in Sources */,
 				86C21139162DD9CF001331BB /* AppDelegate.m in Sources */,
 				86C21142162DD9CF001331BB /* ViewController.m in Sources */,
+				86C21151162DDA27001331BB /* MCSteamView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +339,7 @@
 				86C2114D162DD9CF001331BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
